@@ -15,3 +15,16 @@ Exercises:
 4. Run the "hello" task and observe the output.
 
 */
+
+class MyTask extends DefaultTask {
+  def params
+
+  @TaskAction
+  void action() {
+    println "Here is the params def: $params"
+  }
+}
+
+task customTask(type: MyTask) {
+  params = 42
+}
