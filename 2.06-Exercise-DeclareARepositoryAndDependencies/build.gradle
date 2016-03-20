@@ -27,6 +27,15 @@ http://search.maven.org/
 
 apply plugin: 'java'
 
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile fileTree('libs')
+  compile 'com.google.guava:guava:19.0'
+}
+
 task printDependencies << {
     configurations.compile.each { println it.name }
 }
