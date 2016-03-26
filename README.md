@@ -14,3 +14,4 @@ Apps](https://www.udacity.com/course/ud853) course.
 # Helpful links:
 * [gradle DSL reference](https://docs.gradle.org/current/dsl/)
 * [gradle plugin search](https://plugins.gradle.org/)
+* [gradle nightly builds](http://gradle.org/gradle-nightly-build/)
