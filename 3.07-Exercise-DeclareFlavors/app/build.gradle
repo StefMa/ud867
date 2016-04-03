@@ -38,6 +38,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+      paid {
+        applicationId 'com.udacity.gradle.buildflavors.paid'
+      }
+      free {
+        applicationId 'com.udacity.gradle.buildflavors.free'
+      }
+    }
 }
 
 /*
@@ -52,5 +60,3 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
 }
-
-
